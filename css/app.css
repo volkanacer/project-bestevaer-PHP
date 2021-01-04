@@ -48,9 +48,3 @@ input[type=text], select {
     font-family: 'Montserrat', sans-serif;
 }
   
-  /* Style the content */
-.content {
-    padding: 10px;
-    height: 700px;
-    text-align: center;
-  }
