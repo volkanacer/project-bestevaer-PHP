@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+  }
+  
+.beladingsappform {
+    margin: 0;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    font-family: "Lucida Console", Courier, monospace;
+    line-height: 1.8;
+  }
+
+    /* Bestevaer Beladingsapp form */
+
+.beladingsappform {
+    margin: auto;
+    background-image: url("../img/containers.jpg");
+    width: 50%;
+    padding-top: 100px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    font-family: "Lucida Console", Courier, monospace;
+    font-weight: bold;
+    border-style: solid;
+    border-color: rgb(33, 40, 61);
+    border-width: 5px;
+    line-height: 1.8;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 20px;
+    }
+  
+
+input[type=text], select {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border: none;
+    border: 1px solid rgb(33, 40, 61);
+    border-radius: 2px;
+    padding: 10px 12px;
+    font-family: "Lucida Console", Courier, monospace;
+}
+  
+  /* Style the content */
+.content {
+    padding: 10px;
+    height: 700px;
+    text-align: center;
+  }
