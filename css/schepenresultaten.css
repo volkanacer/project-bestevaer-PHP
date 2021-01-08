@@ -1,0 +1,26 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  
+  /* layout */
+  .content {
+    background-color: rgb(33, 40, 61);
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    height: 700px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    border-style: solid;
+    border-color: rgb(134, 0, 0);
+    border-width: 5px;
+    line-height: 1.8;
+    font-family: 'Montserrat', sans-serif;
+  }

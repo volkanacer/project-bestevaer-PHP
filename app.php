@@ -15,9 +15,9 @@
     <div class="wrapper">
         <nav class="flex-nav">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="app.html">Bestevaer App</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="app.php">Bestevaer App</a></li>
+            <li><a href="contact.php">Contact</a></li>
             <li><a href="schepen.php">Schepen</a></li>
             </li>
           </ul>
@@ -28,16 +28,16 @@
 
         <form action="appresultaten.php" method="post">
 
-            <label for="schip"> Schip</label>
+            <label for="schip_select"> Schip</label>
 
             </br >
 
-            <select id="schip" name="schip">
-              <option value="schip1">Hermes</option>
-              <option value="schip2">Lucky</option>
-              <option value="schip3">NS Angela</option>
-              <option value="schip4">Sabrina</option>
-              <option value="schip5">Triumph</option>
+            <select id="schip_select" name="schip_select">
+              <option value="hermes">Hermes</option>
+              <option value="lucky">Lucky</option>
+              <option value="nsangela">NS Angela</option>
+              <option value="sabrina">Sabrina</option>
+              <option value="triumph">Triumph</option>
             </select>
 
             </br >
@@ -47,14 +47,6 @@
             </br >
 
             <input type="text" name="lading" id="">
-
-            </br >
-
-            <label for="beschikbaarheid"> Lading beschikbaarheid</label>
-
-            </br >
-
-            <input type="text" name="beschikbaarheid" id="">
 
             </br >
 

@@ -15,9 +15,9 @@
     <div class="wrapper">
         <nav class="flex-nav">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="app.html">Bestevaer App</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="app.php">Bestevaer App</a></li>
+            <li><a href="contact.php">Contact</a></li>
             <li><a href="schepen.php">Schepen</a></li>
             </li>
           </ul>
