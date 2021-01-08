@@ -25,13 +25,10 @@
       </div>
 
       <div class="beladingsappform">
-
         <form action="appresultaten.php" method="post">
 
             <label for="schip_select"> Schip</label>
-
             </br >
-
             <select id="schip_select" name="schip_select">
               <option value="hermes">Hermes</option>
               <option value="lucky">Lucky</option>
@@ -39,45 +36,34 @@
               <option value="sabrina">Sabrina</option>
               <option value="triumph">Triumph</option>
             </select>
-
             </br >
-
-            <label for="lading"> Hoeveelheid lading (ton en m3)</label>
-
+            <label for="lading"> Hoeveelheid lading (Ton)</label>
             </br >
-
             <input type="text" name="lading" id="">
-
+             </br >
+            <label for="volume"> Hoeveelheid volume (M3)</label>
             </br >
-
+            <input type="text" name="volume" id="">
+            </br >
             <label for="watersoort"> Watersoort</label>
-
             </br >
-
             <select id="watersoort" name="watersoort">
               <option value="zoet">Zoetwater</option>
               <option value="zout">Zoutwater</option>
             </select>
-
             </br >
-
             <label for="seizoen"> Seizoen</label>
-
             </br >
-
             <select id="seizoen" name="seizoen">
               <option value="lente">Lente</option>
               <option value="zomer ">Zomer</option>
               <option value="herfst">Herfst</option>
               <option value="winter">Winter</option>
             </select>
-
             </br >  
-
             <input type="submit" value="Berekenen">
 
         </form>
-
     </div>
             
     <footer></footer>

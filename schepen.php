@@ -26,7 +26,7 @@
       </div>
 
     <div class="content">
-    <form action="schepenresultaat.php" method="post">
+    <form action="schepen.php" method="post">
       <select name="schip_select" id="">
         <option value="hermes">Hermes</option>
         <option value="lucky">Lucky Star</option>
@@ -35,6 +35,26 @@
         <option value="triumph">Triumph</option>
         <input type="submit" name="submit" value="Zoek">
     </form>
+
+    <?php 
+
+      if(isset($_POST["submit"]) ) {
+          $gekozen_schip = $_POST["schip_select"];
+          $ship = GetShip($gekozen_schip);
+
+          $naam = $ship['naam'];
+          $foto = $ship['photo'];
+          $max_lading = $ship['GT'];
+          $inhoud = $ship['M3'];
+          echo "<h1>$naam</h1>";
+          echo "De maximale lading is $max_lading<br>";
+          echo "De inhoud is $inhoud<br><br>";
+          echo "$foto";
+          
+
+      }
+    ?>
+
     </div>
 
 
