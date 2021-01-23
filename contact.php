@@ -29,6 +29,24 @@
         <p>U kunt contact hebben met ons via.. </p>
         <p>Tel: 123456789</p>
         <p>Email: schepen@bestevaer.nl</p>
+
+        <div class="contactformulier">
+          <form action="contact.php" method="post">
+              <input type="text" name="naam" id="" placeholder="Voornaam">
+              <input type="text" name="achternaam" id="" placeholder="Achternaam">
+              </br >
+              <input type="text" name="adres" id="" placeholder="Adres">
+              <input type="text" name="postcode" id="" placeholder="Postcode">
+              <input type="text" name="plaats" id="" placeholder="Plaats">
+              </br >
+              <input type="text" name="telefoonnummer" id="" placeholder="Telefoonnummer">
+              <input type="email" name="email" id="" placeholder="E-mailadres">
+              </br >
+              </br >
+              <textarea name="message" style="width:300px; height:100px;" placeholder="Typ hier uw bericht.."></textarea>
+              </br >
+              <input type="submit" value="Indienen">
+          </form>
       </div>
 
     <footer></footer>

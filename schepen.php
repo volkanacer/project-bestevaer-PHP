@@ -1,4 +1,4 @@
-<?php include("ships.php"); ?>
+
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -26,40 +26,54 @@
       </div>
 
     <div class="content">
-    <form action="schepen.php" method="post">
-      <select name="schip_select" id="">
-        <option value="hermes">Hermes</option>
-        <option value="lucky">Lucky Star</option>
-        <option value="nsangela">NS Angela</option>
-        <option value="sabrina">Sabrina</option>
-        <option value="triumph">Triumph</option>
-        <input type="submit" name="submit" value="Zoek">
-    </form>
 
-    <?php 
+      <form action="schepen.php" method="post">
+        <select name="naam" id="">
+          <option disabled selected value> -- Maak een keuze -- </option>
+          <option value="Hermes">Hermes</option>
+          <option value="Lucky Star">Lucky Star</option>
+          <option value="NS Angela">NS Angela</option>
+          <option value="Sabrina">Sabrina</option>
+          <option value="Triumph IV">Triumph IV</option>
+          <input type="submit" name="submit" value="Zoek">
+      </form>
 
-      if(isset($_POST["submit"]) ) {
-          $gekozen_schip = $_POST["schip_select"];
-          $ship = GetShip($gekozen_schip);
+      <?php
 
-          $naam = $ship['naam'];
-          $foto = $ship['photo'];
-          $max_lading = $ship['GT'];
-          $inhoud = $ship['M3'];
-          echo "<h1>$naam</h1>";
-          echo "De maximale lading is $max_lading<br>";
-          echo "De inhoud is $inhoud<br><br>";
-          echo "$foto";
-          
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "bestevaer";
 
-      }
-    ?>
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+        // Create connection
+        $conn = mysqli_connect($servername, $username, $password, $dbname);
+        // Check connection
+        if (!$conn) {
+          die("Connection failed: " . mysqli_connect_error());
+        }
+
+        $schip=$_POST["naam"];
+        echo "U heeft gekozen voor $schip";
+
+        $sql = "SELECT * FROM schepen WHERE naam='".$schip."'";
+        $results = mysqli_query($conn, $sql);
+
+        if (mysqli_num_rows($results) > 0) {
+        // output data of each row
+          while($row = mysqli_fetch_array($results)) {
+                echo "<br>";
+                echo "IMO number: " . $row["IMOno"]. "<br>Schip: " . $row["Naam"]. "<br>DWT: " . $row["DWT"]. "<br>GT: " . $row["GT"]. "<br>Volume: " . $row["Volume"]. "<br>";
+              }
+            }
+
+            mysqli_close($conn);
+        }
+      ?>
+
 
     </div>
-
-
-
-
 
 </div>
     
