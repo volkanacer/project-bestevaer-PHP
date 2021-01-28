@@ -3,13 +3,13 @@
     box-sizing: border-box;
   }
   
-  body {
+body {
     margin: 0;
   }
   
   
   /* layout */
-  .content {
+.content {
     background-color: rgb(33, 40, 61);
     width: 50%;
     margin: auto;

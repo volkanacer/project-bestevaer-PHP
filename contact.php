@@ -27,27 +27,34 @@
       <div class="content">
         <h2>Contact</h2>
         <p>U kunt contact hebben met ons via.. </p>
-        <p>Tel: 123456789</p>
-        <p>Email: schepen@bestevaer.nl</p>
+        <p>Telefoon: 123456789<br>E-mail: schepen@bestevaer.nl </p>
 
-        <div class="contactformulier">
-          <form action="contact.php" method="post">
-              <input type="text" name="naam" id="" placeholder="Voornaam">
-              <input type="text" name="achternaam" id="" placeholder="Achternaam">
-              </br >
-              <input type="text" name="adres" id="" placeholder="Adres">
-              <input type="text" name="postcode" id="" placeholder="Postcode">
-              <input type="text" name="plaats" id="" placeholder="Plaats">
-              </br >
-              <input type="text" name="telefoonnummer" id="" placeholder="Telefoonnummer">
-              <input type="email" name="email" id="" placeholder="E-mailadres">
-              </br >
-              </br >
-              <textarea name="message" style="width:300px; height:100px;" placeholder="Typ hier uw bericht.."></textarea>
-              </br >
-              <input type="submit" value="Indienen">
+      <div class="contactformulier">
+          <form action="insert.php" method="post">
+            <input type="text" name="voornaam" placeholder="Voornaam">
+            <input type="text" name="achternaam" placeholder="Achternaam">
+
+            <br> </br>
+
+            <input type="text" name="adres" placeholder="Adres">
+            <input type="text" name="huisnummer" placeholder="Huisnummer">
+
+            <br> </br>
+
+            <input type="text" name="postcode" placeholder="Postcode">
+            <input type="text" name="plaats" placeholder="Plaats">
+
+            <br> </br>
+
+            <textarea name="tekst" rows="4" cols="50" placeholder="Typ hier uw bericht.."></textarea>
+
+            <br> </br>
+            <input type="submit" name="submit" value="Indienen">
+
+
           </form>
       </div>
+
 
     <footer></footer>
 </body>

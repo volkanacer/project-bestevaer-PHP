@@ -64,7 +64,7 @@
         // output data of each row
           while($row = mysqli_fetch_array($results)) {
                 echo "<br>";
-                echo "IMO number: " . $row["IMOno"]. "<br>Schip: " . $row["Naam"]. "<br>DWT: " . $row["DWT"]. "<br>GT: " . $row["GT"]. "<br>Volume: " . $row["Volume"]. "<br>";
+                echo $row["Afbeelding"]. "<br>IMO number: " . $row["IMOno"]. "<br>Schip: " . $row["Naam"]. "<br>DWT: " . $row["DWT"]. "<br>GT: " . $row["GT"]. "<br>Volume: " . $row["Volume"]. "<br>";
               }
             }
 

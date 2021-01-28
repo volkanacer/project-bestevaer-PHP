@@ -27,39 +27,25 @@
       <div class="beladingsappform">
         <form action="appresultaten.php" method="post">
 
-            <label for="schip_select"> Schip</label>
+            <label for="naam"> Schip</label>
             </br >
-            <select id="schip_select" name="schip_select">
-              <option value="hermes">Hermes</option>
-              <option value="lucky">Lucky</option>
-              <option value="nsangela">NS Angela</option>
-              <option value="sabrina">Sabrina</option>
-              <option value="triumph">Triumph</option>
+            <select name="naam" id="">
+              <option disabled selected value> -- Maak een keuze -- </option>
+              <option value="Hermes">Hermes</option>
+              <option value="Lucky Star">Lucky</option>
+              <option value="NS Angela">NS Angela</option>
+              <option value="Sabrina">Sabrina</option>
+              <option value="Triumph IV">Triumph IV</option>
             </select>
             </br >
-            <label for="lading"> Hoeveelheid lading (Ton)</label>
+            <label for="GT"> Nieuwe ton lading toevoegen (KG) </label>
             </br >
-            <input type="text" name="lading" id="">
+            <input type="text" name="GT" id="">
              </br >
-            <label for="volume"> Hoeveelheid volume (M3)</label>
+            <label for="volume"> Nieuwe volume toevoegen (M3)</label>
             </br >
-            <input type="text" name="volume" id="">
+            <input type="text" name="Volume" id="">
             </br >
-            <label for="watersoort"> Watersoort</label>
-            </br >
-            <select id="watersoort" name="watersoort">
-              <option value="zoet">Zoetwater</option>
-              <option value="zout">Zoutwater</option>
-            </select>
-            </br >
-            <label for="seizoen"> Seizoen</label>
-            </br >
-            <select id="seizoen" name="seizoen">
-              <option value="lente">Lente</option>
-              <option value="zomer ">Zomer</option>
-              <option value="herfst">Herfst</option>
-              <option value="winter">Winter</option>
-            </select>
             </br >  
             <input type="submit" value="Berekenen">
 
