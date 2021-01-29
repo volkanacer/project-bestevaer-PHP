@@ -29,7 +29,7 @@
 
         <?php
 
-            $conn = mysqli_connect("localhost", "root", "", "adressenlijst");
+            $conn = mysqli_connect("localhost", "root", "", "bestevaer");
             
             // Connectie
             if($conn === false){
@@ -38,20 +38,18 @@
 
             $voornaam = mysqli_real_escape_string($conn, $_REQUEST['voornaam']);
             $achternaam = mysqli_real_escape_string($conn, $_REQUEST['achternaam']);
-            $adres = mysqli_real_escape_string($conn, $_REQUEST['adres']);
-            $huisnummer = mysqli_real_escape_string($conn, $_REQUEST['huisnummer']);
-            $plaats = mysqli_real_escape_string($conn, $_REQUEST['plaats']);
-            $postcode = mysqli_real_escape_string($conn, $_REQUEST['postcode']);
-            $tekst = mysqli_real_escape_string($conn, $_REQUEST['tekst']);
+            $telefoonnummer = mysqli_real_escape_string($conn, $_REQUEST['telefoonnummer']);
+            $email = mysqli_real_escape_string($conn, $_REQUEST['email']);
+            $bericht = mysqli_real_escape_string($conn, $_REQUEST['bericht']);
 
-            $sql = "INSERT INTO gegevens (voornaam, achternaam, adres, huisnummer , plaats, postcode, tekst)
-            VALUES ('$voornaam', '$achternaam', '$adres', '$huisnummer', '$plaats', '$postcode', '$tekst')";
+            $sql = "INSERT INTO contactgegevens (voornaam, achternaam, telefoonnummer, email , bericht)
+            VALUES ('$voornaam', '$achternaam', '$telefoonnummer', '$email', '$bericht')";
             $result = mysqli_query($conn, $sql);
 
             if(mysqli_query($conn, $sql)){
-                echo "Records added successfully.";
+                echo "Bedankt!<br>We hebben uw bericht ontvangen.";
             } else{
-                echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
+                echo "ERROR: Er is iets fouts gegaan.. $sql. " . mysqli_error($conn);
             }
 
             mysqli_close($conn);

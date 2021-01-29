@@ -89,7 +89,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 ?>
  
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <title>Inloggen</title>
@@ -131,7 +131,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <div class="form-group">
                     <input type="submit" class="btn btn-primary" value="Login">
                 </div>
-                <p>Heeft u geen account? <a href="register.php">Meld u zich hier aan</a></p>
+                
+                <p>Heeft u geen account?<a href="register.php">Meld u zich hier aan</a></p>
+                
             </form>
         </div>
     </main>

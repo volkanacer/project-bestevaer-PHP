@@ -36,17 +36,12 @@
 
             <br> </br>
 
-            <input type="text" name="adres" placeholder="Adres">
-            <input type="text" name="huisnummer" placeholder="Huisnummer">
+            <input type="text" name="telefoonnummer" placeholder="Telefoonnummer">
+            <input type="text" name="email" placeholder="E-mail">
 
             <br> </br>
 
-            <input type="text" name="postcode" placeholder="Postcode">
-            <input type="text" name="plaats" placeholder="Plaats">
-
-            <br> </br>
-
-            <textarea name="tekst" rows="4" cols="50" placeholder="Typ hier uw bericht.."></textarea>
+            <textarea name="bericht" rows="4" cols="50" placeholder="Typ hier uw bericht.."></textarea>
 
             <br> </br>
             <input type="submit" name="submit" value="Indienen">
