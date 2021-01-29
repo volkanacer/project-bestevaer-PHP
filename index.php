@@ -26,6 +26,7 @@
 
       <div class="content">
         <h2>Welkom op de website van Rederij Bestevaer!</h2>
+        
         <p>Voor de rederij is het belangrijk dat schepen zoveel mogelijk zijn geladen als zij varen. <br>
         Een leeg, varend schip kost alleen maar geld. Een schip heeft een bepaalde afmeting. <br>
         Het is wettelijk verboden om meer lading mee te nemen dan is toegestaan. <br>

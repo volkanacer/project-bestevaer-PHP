@@ -77,16 +77,18 @@
             if(isset($_POST["GT"]) ) {
                   
                 echo "Ingevoerde lading: $nieuwe_lading.<br>";
-                echo "De maximale lading is $gewicht.<br>";
+                echo "De maximale lading is: $gewicht.<br>";
                 if($nieuwe_lading > $gewicht) {
                   echo "U heeft de maximale gewicht overschreden, de situatie is onveilig.<br>Kies een andere schip of neem contact met ons op.<br><br>";
                 }
          
             }
 
+            echo "<br>";
+
             if(isset($_POST["Volume"]) ) {
                 echo "Ingevoerde volume: $nieuwe_volume.<br>";
-                echo "De maximale volume is $volume.<br>";
+                echo "De maximale volume is: $volume.<br>";
                 if($nieuwe_volume > $volume) {
                   echo "U heeft de maximale volume overschreden, de situatie is onveilig.<br>Kies een andere schip of neem contact met ons op.<br>";
                 }
@@ -97,6 +99,7 @@
         mysqli_close($conn);
     
     ?>
+
 
       </div>
 <footer></footer>
